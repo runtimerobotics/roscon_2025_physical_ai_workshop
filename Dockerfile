@@ -2,7 +2,7 @@ FROM ghcr.io/tiryoh/ros2-desktop-vnc:humble
 
 # Set up environment variables
 ENV DEBIAN_FRONTEND=noninteractive
-ENV ROS_DISTRO=jazzy
+ENV ROS_DISTRO=humble
 
 # Update and upgrade the system
 RUN apt-get update -q && \
@@ -33,6 +33,10 @@ COPY unitree_sdk2_python /home/ubuntu/unitree_sdk2_python
 RUN chown -R 1000:1000 /home/ubuntu/unitree_sdk2_python || true
 
 
+# Install the package
+RUN cd /home/ubuntu/unitree_sdk2_python && pip3 install -e .
+
+
 # Copy unitree_mujuco into the user's home directory
 COPY unitree_mujoco /home/ubuntu/unitree_mujoco
 RUN chown -R 1000:1000 /home/ubuntu/unitree_mujoco || true
@@ -40,3 +44,9 @@ RUN chown -R 1000:1000 /home/ubuntu/unitree_mujoco || true
 # Copy unitree_rl_gym into the user's home directory
 COPY unitree_rl_gym /home/ubuntu/unitree_rl_gym
 RUN chown -R 1000:1000 /home/ubuntu/unitree_rl_gym || true
+
+# Copy unitree_ros2 into the user's home directory
+COPY unitree_ros2 /home/ubuntu/unitree_ros2
+RUN chown -R 1000:1000 /home/ubuntu/unitree_ros2 || true
+
+
