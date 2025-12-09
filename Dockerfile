@@ -49,4 +49,9 @@ RUN chown -R 1000:1000 /home/ubuntu/unitree_rl_gym || true
 COPY unitree_ros2 /home/ubuntu/unitree_ros2
 RUN chown -R 1000:1000 /home/ubuntu/unitree_ros2 || true
 
+# Copy examples into the user's home directory
+COPY examples /home/ubuntu/examples
+RUN chown -R 1000:1000 /home/ubuntu/examples || true
 
+# Copy config into the user's home directory
+COPY config.py /home/ubuntu/unitree_mujoco/simulate_python/config.py
