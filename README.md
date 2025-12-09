@@ -1,1 +1,1 @@
-# roscon_2025_physical_ai_workshop
+# ROSCon 2025 Physical AI Workshop
