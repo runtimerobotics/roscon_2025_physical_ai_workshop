@@ -55,3 +55,6 @@ RUN chown -R 1000:1000 /home/ubuntu/examples || true
 
 # Copy config into the user's home directory
 COPY config.py /home/ubuntu/unitree_mujoco/simulate_python/config.py
+
+# Copy Tutorails docs to Desktop
+COPY unitree_G1_tutorial /home/ubuntu/Desktop
