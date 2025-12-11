@@ -1,0 +1,9 @@
+https://support.unitree.com/main/en
+
+https://support.unitree.com/home/en/G1_developer/about_G1
+
+https://github.com/unitreerobotics
+
+https://www.unitree.com/opensource
+
+Humanoid URDF files: https://github.com/YangLuo-Bionics/dobot_atom
