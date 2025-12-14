@@ -74,12 +74,10 @@ A helper script is provided to install:
 - NVIDIA Container Toolkit
 - Required system dependencies
 
-### Run the setup script
+### Run the setup script: Make sure internet connection is available without any proxy restriction
 
 ```bash
-cd docker_setup_scripts
-chmod +x setup_docker_ubuntu.sh
-sudo ./setup_docker_ubuntu.sh
+wget https://raw.githubusercontent.com/runtimerobotics/roscon_2025_physical_ai_workshop/main/docker_setup_scripts/setup_docker_ubuntu.sh && chmod +x setup_docker_ubuntu.sh && sudo ./setup_docker_ubuntu.sh
 ````
 
 ### Verify Docker
