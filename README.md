@@ -37,7 +37,7 @@ This repository provides everything required to run the **Physical AI with Real 
 The environment is designed to support:
 
 - Physical AI workflows
-- ROS 2 Jazzy development
+- ROS 2 Humble development
 - Humanoid robotics and embodied intelligence
 - Simulation-to-real robot readiness (Unitree G1)
 
