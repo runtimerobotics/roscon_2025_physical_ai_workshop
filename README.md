@@ -178,7 +178,7 @@ docker --version
 Once Docker is installed on any operating system, run:
 
 ```bash
-docker pull runtimerobotics/physical_ai_ros2_workshop:latest
+docker pull -platform=linux/amd64 runtimerobotics/physical_ai_ros2_workshop:latest
 
 docker run -p 6080:80 --security-opt seccomp=unconfined --shm-size=512m runtimerobotics/physical_ai_ros2_workshop:latest
 ```
